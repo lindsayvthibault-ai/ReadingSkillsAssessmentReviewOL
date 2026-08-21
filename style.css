@@ -1,235 +1,197 @@
+/* --- Root Variables: On-Level Purple Theme --- */
 :root {
-  --bg: #0d1224;
-  --bg-2: #151b34;
-  --panel: #1b2242;
-  --panel-edge: #2a3260;
-  --cyan: #5CE7DE;
-  --pink: #FF6FA0;
-  --amber: #FFC857;
-  --text: #EAF0FF;
-  --text-dim: #9AA6CC;
-  --good: #6EE7A8;
-  --bad: #FF6F6F;
+  /* Main Background & Card Colors */
+  --bg-dark: #120A21;           /* Deep dark purple background */
+  --card-bg: #1E1233;           /* Rich purple card container */
+  --card-border: #3D2566;       /* Medium purple borders */
+  
+  /* Accent & Highlight Colors */
+  --primary-purple: #9D4EDD;   /* Bright electric purple */
+  --purple-glow: rgba(157, 78, 221, 0.4); /* Neon purple glow */
+  --accent-cyan: #5CE7DE;       /* High-contrast cyan for timers/accents */
+  --accent-gold: #FFC857;       /* Gold for trophies/scores */
+  --accent-pink: #FF6FA0;       /* Pink for hearts/lives */
+  
+  /* Text Colors */
+  --text-main: #F4EFFA;        /* Off-white text for easy reading */
+  --text-sub: #C8B8DB;         /* Soft lavender for subtext */
+
+  /* Button & Feedback States */
+  --btn-bg: #2B1647;
+  --btn-hover: #3A1D5F;
+  --correct-green: #2EC4B6;
+  --correct-bg: rgba(46, 196, 182, 0.15);
+  --wrong-red: #E71D36;
+  --wrong-bg: rgba(231, 29, 54, 0.15);
 }
 
-body {
-  margin: 0;
-  padding: 18px;
-  background: radial-gradient(circle at 20% 0%, #1a2148 0%, var(--bg) 55%);
-  color: var(--text);
-  font-family: 'Inter', sans-serif;
-  min-height: 100vh;
+/* Base Body Styling */
+* {
   box-sizing: border-box;
 }
 
-* { box-sizing: border-box; }
-
-.cq-pixel { font-family: 'Press Start 2P', monospace; letter-spacing: 0.5px; }
-.cq-wrap { max-width: 720px; margin: 0 auto; }
-
-/* ---- Road / checkpoint track ---- */
-.cq-track { display: flex; align-items: center; gap: 4px; margin-bottom: 22px; padding: 12px 14px; background: var(--panel); border: 1px solid var(--panel-edge); border-radius: 12px; overflow-x: auto; }
-.cq-stop { display:flex; align-items:center; gap:6px; flex-shrink:0; }
-.cq-dot { width: 26px; height: 26px; border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size: 11px; font-weight:800; border: 2px solid var(--panel-edge); background: var(--bg-2); color: var(--text-dim); flex-shrink:0; transition: all .3s; }
-.cq-dot.done { background: var(--cyan); border-color: var(--cyan); color: #0d1224; }
-.cq-dot.active { background: var(--pink); border-color: var(--pink); color: #0d1224; box-shadow: 0 0 0 4px rgba(255,111,160,0.2); }
-.cq-road { width: 22px; height: 3px; background: var(--panel-edge); flex-shrink: 0; }
-.cq-road.done { background: var(--cyan); }
-
-/* ---- Start screen ---- */
-.cq-start { text-align:center; padding: 30px 14px 10px; }
-.cq-title { font-size: 22px; line-height: 1.6; color: var(--amber); text-shadow: 0 0 14px rgba(255,200,87,0.35); margin-bottom: 6px; }
-.cq-sub { color: var(--text-dim); font-size: 14px; margin-bottom: 26px; }
-.cq-levels-preview { display:grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 26px 0; text-align:left; }
-.cq-lvl-card { background: var(--panel); border: 1px solid var(--panel-edge); border-radius: 10px; padding: 12px 14px; }
-.cq-lvl-card b { color: var(--cyan); font-size: 13px; }
-.cq-lvl-card p { margin: 4px 0 0; font-size: 12px; color: var(--text-dim); }
-.cq-btn { font-family: 'Press Start 2P', monospace; cursor: pointer; border: none; border-radius: 10px; padding: 16px 26px; font-size: 13px; background: linear-gradient(180deg, var(--pink), #e1518a); color: #fff; box-shadow: 0 6px 0 #a83a68, 0 10px 18px rgba(255,111,160,0.25); transition: transform .08s; display:inline-flex; align-items:center; gap:10px; }
-.cq-btn:active { transform: translateY(4px); box-shadow: 0 2px 0 #a83a68; }
-.cq-btn.secondary { background: linear-gradient(180deg, var(--cyan), #35b6ac); box-shadow: 0 6px 0 #1f7f78, 0 10px 18px rgba(92,231,222,0.25); }
-.cq-btn.secondary:active { box-shadow: 0 2px 0 #1f7f78; }
-
-/* ---- HUD ---- */
-.cq-hud { display:flex; align-items:center; justify-content: space-between; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
-.cq-hud-item { display:flex; align-items:center; gap: 6px; background: var(--panel); border: 1px solid var(--panel-edge); padding: 7px 11px; border-radius: 20px; font-size: 13px; font-weight: 700; }
-.cq-hearts { display:flex; gap: 3px; }
-.cq-timer-bar-wrap { width: 100%; height: 10px; background: var(--panel); border-radius: 6px; overflow: hidden; margin-bottom: 16px; border: 1px solid var(--panel-edge); }
-.cq-timer-bar { height: 100%; background: linear-gradient(90deg, var(--cyan), var(--pink)); transition: width 1s linear; }
-
-.cq-level-head { display:flex; align-items:baseline; justify-content:space-between; margin-bottom: 10px; }
-.cq-level-head h2 { font-size: 17px; margin:0; color: var(--amber); }
-.cq-level-head span { font-size: 12px; color: var(--text-dim); }
-
-/* ---- Passage panel ---- */
-.cq-passage-toggle { display:flex; align-items:center; gap:6px; background: var(--panel); border: 1px dashed var(--panel-edge); color: var(--cyan); font-size: 12px; font-weight: 700; padding: 8px 12px; border-radius: 8px; cursor: pointer; margin-bottom: 12px; width: 100%; justify-content: center; }
-.cq-passage { background: #10152b; border: 1px solid var(--panel-edge); border-left: 3px solid var(--cyan); border-radius: 10px; padding: 14px 16px; margin-bottom: 16px; font-family: 'Lora', serif; }
-.cq-passage h3 { font-family: 'Inter', sans-serif; font-size: 13px; color: var(--cyan); margin: 0 0 8px; text-transform: uppercase; letter-spacing: 1px; }
-.cq-passage p, .cq-passage .cq-line { font-size: 14.5px; line-height: 1.7; color: #dbe3ff; margin: 0 0 8px; }
-.cq-passage p.hi { background: rgba(92,231,222,0.08); border-radius: 4px; padding: 2px 4px; margin-left: -4px; }
-.cq-para-num { color: var(--text-dim); font-size: 11px; font-family: 'Inter'; margin-right: 4px; }
-
-/* ---- Question card ---- */
-.cq-card { background: var(--panel); border: 1px solid var(--panel-edge); border-radius: 14px; padding: 18px; }
-.cq-question { font-size: 15.5px; line-height: 1.55; margin: 0 0 16px; font-weight: 600; }
-.cq-entry { background: #10152b; border: 1px solid var(--panel-edge); border-radius: 8px; padding: 10px 14px; margin-bottom: 14px; font-family: 'Lora', serif; }
-.cq-entry b { color: var(--amber); font-family: 'Inter'; font-size: 13px; }
-.cq-entry ol { margin: 6px 0 0; padding-left: 20px; font-size: 13.5px; color: #dbe3ff; }
-.cq-options { display:flex; flex-direction: column; gap: 9px; }
-.cq-opt { text-align:left; background: var(--bg-2); border: 1px solid var(--panel-edge); color: var(--text); padding: 12px 14px; border-radius: 10px; font-size: 14px; cursor: pointer; display:flex; gap: 10px; align-items:flex-start; transition: border-color .15s, background .15s; }
-.cq-opt:hover:not(:disabled) { border-color: var(--cyan); }
-.cq-opt-letter { font-weight: 800; color: var(--cyan); flex-shrink:0; }
-.cq-opt.correct { border-color: var(--good); background: rgba(110,231,168,0.12); }
-.cq-opt.wrong { border-color: var(--bad); background: rgba(255,111,111,0.12); }
-.cq-opt:disabled { cursor: default; opacity: 0.75; }
-
-/* Sort mode */
-.cq-sort-text { font-size: 20px; text-align:center; font-family: 'Lora', serif; font-style: italic; padding: 26px 10px; color: #f2f5ff; }
-.cq-sort-btns { display:flex; gap: 12px; }
-.cq-sort-btn { flex:1; padding: 18px 10px; border-radius: 12px; border: 2px solid var(--panel-edge); background: var(--bg-2); color: var(--text); font-weight: 800; font-size: 14px; cursor:pointer; }
-.cq-sort-btn.complete-choice { border-color: #4fb0ff33; }
-.cq-sort-btn.fragment-choice { border-color: #ff9f4f33; }
-.cq-sort-btn.correct { border-color: var(--good); background: rgba(110,231,168,0.12); }
-.cq-sort-btn.wrong { border-color: var(--bad); background: rgba(255,111,111,0.12); }
-
-/* ---- Feedback popup ---- */
-.cq-feedback { margin-top: 14px; padding: 14px 16px; border-radius: 10px; font-size: 13.5px; line-height: 1.5; }
-.cq-feedback.correct { background: rgba(110,231,168,0.1); border: 1px solid var(--good); }
-.cq-feedback.wrong, .cq-feedback.timeout { background: rgba(255,111,111,0.1); border: 1px solid var(--bad); }
-.cq-feedback-head { font-weight: 800; margin-bottom: 8px; display:flex; align-items:center; gap:6px; }
-.cq-feedback.correct .cq-feedback-head { color: var(--good); }
-.cq-feedback.wrong .cq-feedback-head, .cq-feedback.timeout .cq-feedback-head { color: var(--bad); }
-.cq-next-btn { margin-top: 14px; width: 100%; }
-
-/* ---- Level complete / finished ---- */
-.cq-center { text-align:center; padding: 28px 10px; }
-.cq-stars { display:flex; justify-content:center; gap: 6px; margin: 14px 0 20px; }
-.cq-result-row { display:flex; justify-content:space-between; padding: 10px 14px; background: var(--panel); border: 1px solid var(--panel-edge); border-radius: 8px; margin-bottom: 8px; font-size: 13.5px; }
-.cq-tier { font-size: 16px; margin: 8px 0 18px; padding: 10px; border-radius: 10px; background: var(--panel); border: 1px solid var(--panel-edge); }
-
-@media (max-width: 480px) {
-  .cq-levels-preview { grid-template-columns: 1fr; }
-  .cq-title { font-size: 17px; }
-}
-/* Custom Overrides for Option Buttons & Arcade Style */
-.cq-options {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 12px !important;
-  width: 100% !important;
+body {
+  background-color: var(--bg-dark);
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(157, 78, 221, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(123, 44, 191, 0.15) 0%, transparent 40%);
+  color: var(--text-main);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.cq-opt {
-  display: flex !important;
-  align-items: flex-start !important;
-  width: 100% !important;
-  padding: 14px 18px !important;
-  background-color: var(--panel) !important;
-  border: 1px solid var(--panel-edge) !important;
-  border-radius: 10px !important;
-  color: var(--text) !important;
-  font-size: 14.5px !important;
-  line-height: 1.5 !important;
-  cursor: pointer !important;
-  transition: all 0.2s ease-in-out !important;
+/* Main App Container */
+#app, #game-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.cq-opt:hover:not(:disabled) {
-  border-color: var(--cyan) !important;
-  background-color: var(--bg-2) !important;
-  transform: translateY(-2px);
-}
-
-.cq-opt-letter {
-  font-family: 'Press Start 2P', monospace !important;
-  color: var(--cyan) !important;
-  margin-right: 12px !important;
-  font-size: 12px !important;
-}
-/* --- HUD & Header Styles --- */
+/* --- HUD (Heads-Up Display) --- */
 .cq-hud {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--panel, #121829);
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
   padding: 12px 20px;
-  border-radius: 10px;
   margin-bottom: 20px;
-  border: 1px solid var(--panel-edge, #232d42);
-  font-weight: 600;
-  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cq-hud-item {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
+/* --- Headers & Titles --- */
 .cq-level-head {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-  color: #ffffff;
+  align-items: baseline;
+  margin-bottom: 15px;
 }
 
 .cq-level-head h2 {
-  font-size: 1.25rem;
-  font-weight: 700;
+  color: var(--primary-purple);
+  margin: 0;
+  font-size: 1.3rem;
+  text-shadow: 0 0 10px var(--purple-glow);
 }
 
 .cq-level-head span {
-  font-size: 0.875rem;
-  opacity: 0.8;
+  color: var(--text-sub);
+  font-size: 0.9rem;
 }
 
-/* --- Passage & Question Cards --- */
+/* --- Passage Box --- */
 .cq-passage {
-  background: #1e293b;
-  border-left: 4px solid #38bdf8;
-  padding: 16px 20px;
-  border-radius: 8px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-left: 4px solid var(--primary-purple);
+  border-radius: 12px;
+  padding: 18px 22px;
   margin-bottom: 20px;
-  color: #e2e8f0;
-  line-height: 1.6;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 .cq-passage h3 {
-  font-size: 0.75rem;
+  color: var(--accent-cyan);
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #38bdf8;
-  margin-bottom: 6px;
-  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.cq-passage p {
+  color: var(--text-main);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* --- Question Card --- */
+.cq-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .cq-question {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 16px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--text-main);
 }
 
-/* --- Option State Modifiers --- */
+/* Options Container */
+.cq-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Option Buttons */
+.cq-opt {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: var(--btn-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  color: var(--text-main);
+  font-size: 0.95rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.cq-opt:hover:not(:disabled) {
+  background-color: var(--btn-hover);
+  border-color: var(--primary-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--purple-glow);
+}
+
+.cq-opt-letter {
+  font-weight: 700;
+  color: var(--accent-cyan);
+}
+
+/* Answer State Classes */
 .cq-opt.correct {
-  border-color: #4ade80 !important;
-  background-color: rgba(74, 222, 128, 0.15) !important;
-  color: #4ade80 !important;
+  background-color: var(--correct-bg) !important;
+  border-color: var(--correct-green) !important;
+  color: #FFFFFF !important;
 }
 
 .cq-opt.wrong {
-  border-color: #f87171 !important;
-  background-color: rgba(248, 113, 113, 0.15) !important;
-  color: #f87171 !important;
+  background-color: var(--wrong-bg) !important;
+  border-color: var(--wrong-red) !important;
+  opacity: 0.7;
 }
 
 .cq-opt:disabled {
-  cursor: default !important;
-  transform: none !important;
-  opacity: 0.8;
+  cursor: default;
 }
 
-/* --- Dynamic Feedback Boxes --- */
+/* --- Feedback Section --- */
 .cq-feedback {
   margin-top: 20px;
   padding: 16px;
@@ -238,41 +200,85 @@ body {
 }
 
 .cq-feedback.correct {
-  background-color: rgba(74, 222, 128, 0.1);
-  border: 1px solid #4ade80;
-  color: #f0fdf4;
+  background-color: var(--correct-bg);
+  border: 1px solid var(--correct-green);
 }
 
 .cq-feedback.wrong {
-  background-color: rgba(248, 113, 113, 0.1);
-  border: 1px solid #f87171;
-  color: #fef2f2;
+  background-color: var(--wrong-bg);
+  border: 1px solid var(--wrong-red);
 }
 
 .cq-feedback-head {
   font-weight: 700;
-  font-size: 1.1rem;
-  margin-bottom: 6px;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.cq-feedback.correct .cq-feedback-head { color: var(--correct-green); }
+.cq-feedback.wrong .cq-feedback-head { color: var(--wrong-red); }
+
+.cq-feedback p {
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+  font-size: 0.92rem;
+  color: var(--text-main);
+}
+
+/* --- General Buttons --- */
+.cq-btn {
+  background-color: var(--primary-purple);
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px var(--purple-glow);
+}
+
+.cq-btn:hover {
+  background-color: #B565F6;
+  transform: translateY(-2px);
 }
 
 .cq-next-btn {
-  margin-top: 14px;
-  padding: 10px 20px;
-  font-size: 0.9rem;
+  width: 100%;
+  text-align: center;
 }
 
-/* --- End Game View --- */
+/* --- Center / End Screen Displays --- */
 .cq-center {
   text-align: center;
-  padding: 40px 20px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 40px 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.cq-title {
+  color: var(--primary-purple);
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-shadow: 0 0 12px var(--purple-glow);
+}
+
+.cq-sub {
+  color: var(--text-sub);
+  font-size: 1rem;
+  margin-bottom: 25px;
 }
 
 .cq-tier {
-  font-size: 1.5rem;
-  color: #38bdf8;
-  margin: 24px 0;
+  font-size: 1.2rem;
+  color: var(--accent-gold);
 }
 
+/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
