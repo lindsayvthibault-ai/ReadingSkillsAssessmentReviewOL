@@ -17,7 +17,7 @@ const GAME_DATA = [
     incorrectRationale: "Think about why someone hovering at the oven door gets questioned. Looking up oven history (B), predicting recipes (C), or counting words (D) doesn't explain the character's impatience."
   },
   {
-    level: 2,
+    level: 1,
     title: "LV.1 — Fix the Confusion (Q2)",
     passage: "POEM: Learning to Bake\nMy aunt taught herself to bake the way she learned to hope —\nmix, stir, wait, breathe, wait, breathe—",
     question: "A student thinks 'wait, breathe, wait, breathe' means the aunt is panicking. What strategy helps fix this misunderstanding?",
@@ -32,7 +32,7 @@ const GAME_DATA = [
     incorrectRationale: "Look at the overall tone. A medical dictionary (A), personal opinions (C), or checking for burnt cakes (D) don't explain the calm rhythm of 'wait, breathe.'"
   },
   {
-    level: 3,
+    level: 1,
     title: "LV.1 — Fix the Confusion (Q3)",
     passage: "POEM: Learning to Bake\nMy aunt taught herself to bake the way she learned to hope —\nmix, stir, wait, breathe, wait, breathe—\nWhen you hover by the oven door she gives you a look that asks,\nWho told you good things happen fast?",
     question: "A reader doesn’t understand how baking connects to 'learning to hope.' What should they do?",
@@ -49,7 +49,7 @@ const GAME_DATA = [
 
   // --- LEVEL 2 — VOCABULARY IN CONTEXT (Q4 - Q7) ---
   {
-    level: 4,
+    level: 2,
     title: "LV.2 — Word Detective (Q4)",
     passage: "Paragraph 2:\nThe moment I dipped the brush into the paint bucket, thick white paint dripped down the handle and onto my wrist. I wiped it off, annoyed, and swiped the brush across the fence in one long streak. The paint splattered everywhere — on the grass, on my shoes, and on the neighbor’s mailbox. Mr. Alvarez sighed the kind of sigh that said, This is going to be a long summer.",
     question: "In paragraph 2 of My Summer Painting Fences, what does 'splattered' most nearly mean?",
@@ -64,7 +64,7 @@ const GAME_DATA = [
     incorrectRationale: "Look at where the paint ended up—grass, shoes, mailbox! That shows a messy scatter (B) rather than landing gently, drying, or disappearing."
   },
   {
-    level: 5,
+    level: 2,
     title: "LV.2 — Word Detective (Q5)",
     passage: "Paragraph 2:\n...I wiped it off, annoyed, and swiped the brush across the fence in one long streak. The paint splattered everywhere — on the grass, on my shoes, and on the neighbor’s mailbox...",
     question: "Which detail BEST helps the reader understand the meaning of 'splattered'?",
@@ -79,7 +79,7 @@ const GAME_DATA = [
     incorrectRationale: "Find the sentence that illustrates the word. Options A, B, and D describe paint on a wrist or reactions, whereas Option C directly shows the widespread mess."
   },
   {
-    level: 6,
+    level: 2,
     title: "LV.2 — Word Detective (Q6)",
     passage: "Paragraph 3:\nBy the end of the first week, I had learned to paint without splattering. But it was still exhausting. The sun beat down on my back, and my arms ached from holding the brush steady. Every afternoon, I came home streaked with paint and smelling like sunscreen and sweat.",
     question: "In paragraph 3, what does 'ached' most nearly mean?",
@@ -94,7 +94,7 @@ const GAME_DATA = [
     incorrectRationale: "Think about physical fatigue. Exhausting work in the heat makes your arms sore (A), not fast, numb, or immediately stronger."
   },
   {
-    level: 7,
+    level: 2,
     title: "LV.2 — Word Detective (Q7)",
     passage: "Paragraph 4:\nI didn’t need the job. My parents kept telling me to focus on summer reading instead. But there was this backpack — a forestgreen hiking pack with padded straps and a dozen pockets. I wanted it more than anything...",
     question: "In paragraph 4, what does 'forestgreen' most nearly describe?",
@@ -111,7 +111,7 @@ const GAME_DATA = [
 
   // --- LEVEL 3 — KEY IDEA & SUPPORTING DETAILS (Q8 - Q12) ---
   {
-    level: 8,
+    level: 3,
     title: "LV.3 — Key Idea & Details (Q8)",
     passage: "Passage Summary:\nAn impatient teenager takes a hard summer job painting fences to buy a backpack. Along the way, the narrator learns how to slow down, pay attention, and finish what they started.",
     question: "Which sentence BEST states the main idea of My Summer Painting Fences?",
@@ -126,7 +126,7 @@ const GAME_DATA = [
     incorrectRationale: "Look for the central lesson. Options A, C, and D mention specific details or opinions, but Option B captures the main growth of the narrator."
   },
   {
-    level: 9,
+    level: 3,
     title: "LV.3 — Key Idea & Details (Q9)",
     passage: "Paragraph 3:\nBy the end of the first week, I had learned to paint without splattering. But it was still exhausting. The sun beat down on my back, and my arms ached from holding the brush steady...",
     question: "Which detail BEST supports the idea that the narrator’s job was challenging?",
@@ -141,7 +141,7 @@ const GAME_DATA = [
     incorrectRationale: "Focus on evidence of physical struggle. Minor accidents (A), wanting items (B), or watching friends (D) don't describe the hardship of the job like Option C does."
   },
   {
-    level: 10,
+    level: 3,
     title: "LV.3 — Key Idea & Details (Q10)",
     passage: "Paragraph 5:\nSo I kept painting. Slowly. Carefully... By August, I had saved enough for the backpack. But somewhere along the way, I realized the backpack wasn’t really the point. I had learned how to slow down, pay attention, and finish what I started.",
     question: "What is the main idea of paragraph 5?",
@@ -156,7 +156,7 @@ const GAME_DATA = [
     incorrectRationale: "Read the concluding reflection. She doesn't regret the job or quit; she discovers that learning to slow down and finish tasks was the unexpected reward."
   },
   {
-    level: 11,
+    level: 3,
     title: "LV.3 — Key Idea & Details (Q11)",
     passage: "Paragraphs 3 & 5:\n- 'The sun beat down on my back, and my arms ached...'\n- 'Even when the heat made my head spin. Even when my friends biked past...'",
     question: "Which detail BEST supports the idea that independence often comes with unexpected challenges?",
@@ -171,7 +171,7 @@ const GAME_DATA = [
     incorrectRationale: "Look for unexpected hardship during the process of earning independence. Option C details the grueling effort required to succeed on her own."
   },
   {
-    level: 12,
+    level: 3,
     title: "LV.3 — Key Idea & Details (Q12)",
     passage: "Paragraph 1 vs. Paragraph 5:\n- Paragraph 1: 'I was not a patient person. At fourteen, I wanted everything done fast...'\n- Paragraph 5: 'So I kept painting... saved enough... finished what I started.'",
     question: "Which detail LEAST supports the idea that the narrator is responsible?",
@@ -188,7 +188,7 @@ const GAME_DATA = [
 
   // --- LEVEL 4 — SENTENCE SORT (Q13 - Q16) ---
   {
-    level: 13,
+    level: 4,
     title: "LV.4 — Sentence Sort (Q13)",
     passage: "Item 13:\n'Balancing on my toes in the heat.'",
     question: "Determine whether the excerpt is a complete sentence or a fragment:\n\n'Balancing on my toes in the heat.'",
@@ -201,7 +201,7 @@ const GAME_DATA = [
     incorrectRationale: "Who is balancing? This participle phrase is missing a clear subject and predicate, making it a fragment (A)."
   },
   {
-    level: 14,
+    level: 4,
     title: "LV.4 — Sentence Sort (Q14)",
     passage: "Item 14:\n'I wiped the paint off my wrist.'",
     question: "Determine whether the excerpt is a complete sentence or a fragment:\n\n'I wiped the paint off my wrist.'",
@@ -214,7 +214,7 @@ const GAME_DATA = [
     incorrectRationale: "Check subject and verb: 'I' (subject) + 'wiped' (verb). This forms a complete sentence (B)."
   },
   {
-    level: 15,
+    level: 4,
     title: "LV.4 — Sentence Sort (Q15)",
     passage: "Item 15:\n'One long streak across the fence.'",
     question: "Determine whether the excerpt is a complete sentence or a fragment:\n\n'One long streak across the fence.'",
@@ -227,7 +227,7 @@ const GAME_DATA = [
     incorrectRationale: "Notice there is no action verb here. It's just a noun phrase, making it a fragment (A)."
   },
   {
-    level: 16,
+    level: 4,
     title: "LV.4 — Sentence Sort (Q16)",
     passage: "Item 16:\n'I learned to slow down.'",
     question: "Determine whether the excerpt is a complete sentence or a fragment:\n\n'I learned to slow down.'",
@@ -240,3 +240,188 @@ const GAME_DATA = [
     incorrectRationale: "This has a subject ('I') and a main verb ('learned'). It stands on its own as a complete sentence (B)."
   }
 ];
+
+// --- GAME STATE VARIABLES ---
+let currentQuestionIndex = 0;
+let score = 0;
+let lives = 7;
+let streak = 0;
+let timer = null;
+let timeLeft = 120; // 2 minutes per question
+
+// --- DOM ELEMENTS ---
+const startScreen = document.getElementById('start-screen');
+const gameContainer = document.getElementById('game-container');
+const startBtn = document.getElementById('start-btn');
+
+// --- EVENT LISTENERS ---
+if (startBtn) {
+  startBtn.addEventListener('click', startGame);
+}
+
+// --- GAME ENGINE FUNCTIONS ---
+
+function startGame() {
+  currentQuestionIndex = 0;
+  score = 0;
+  lives = 7;
+  streak = 0;
+  
+  if (startScreen) startScreen.style.display = 'none';
+  gameContainer.style.display = 'block';
+  
+  renderQuestion();
+}
+
+function startTimer() {
+  clearInterval(timer);
+  timeLeft = 120;
+  
+  timer = setInterval(() => {
+    timeLeft--;
+    const timerDisplay = document.getElementById('timer-count');
+    if (timerDisplay) {
+      const mins = Math.floor(timeLeft / 60);
+      const secs = timeLeft % 60;
+      timerDisplay.textContent = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+    }
+
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      handleTimeout();
+    }
+  }, 1000);
+}
+
+function renderQuestion() {
+  const data = GAME_DATA[currentQuestionIndex];
+  const optionLetters = ['A', 'B', 'C', 'D'];
+
+  const html = `
+    <div class="cq-hud">
+      <div class="cq-hud-item"><i data-lucide="heart" style="color: var(--accent-pink);"></i> Lives: ${lives}</div>
+      <div class="cq-hud-item"><i data-lucide="clock" style="color: var(--accent-cyan);"></i> Time: <span id="timer-count">2:00</span></div>
+      <div class="cq-hud-item"><i data-lucide="trophy" style="color: var(--accent-gold);"></i> Score: ${score}</div>
+    </div>
+
+    <div class="cq-passage">
+      <h3>Context / Passage Excerpt</h3>
+      <p>${data.passage.replace(/\n/g, '<br>')}</p>
+    </div>
+
+    <div class="cq-card">
+      <div class="cq-level-head">
+        <h2>${data.title}</h2>
+        <span>Question ${currentQuestionIndex + 1} of ${GAME_DATA.length}</span>
+      </div>
+
+      <p class="cq-question">${data.question}</p>
+
+      <div class="cq-options">
+        ${data.options.map((opt, i) => `
+          <button class="cq-opt" onclick="selectAnswer(${i})">
+            <span class="cq-opt-letter">${optionLetters[i]}.</span>
+            <span>${opt}</span>
+          </button>
+        `).join('')}
+      </div>
+
+      <div id="feedback-area"></div>
+    </div>
+  `;
+
+  gameContainer.innerHTML = html;
+  
+  // Re-initialize dynamic Lucide icons for hearts/clocks
+  if (window.lucide) lucide.createIcons();
+  
+  startTimer();
+}
+
+function selectAnswer(selectedIndex) {
+  clearInterval(timer);
+  const data = GAME_DATA[currentQuestionIndex];
+  const buttons = document.querySelectorAll('.cq-opt');
+  const feedbackArea = document.getElementById('feedback-area');
+  
+  buttons.forEach(btn => btn.disabled = true);
+
+  if (selectedIndex === data.correct) {
+    buttons[selectedIndex].classList.add('correct');
+    streak++;
+    const bonus = streak > 1 ? streak * 50 : 0;
+    const earned = 100 + bonus;
+    score += earned;
+
+    feedbackArea.innerHTML = `
+      <div class="cq-feedback correct">
+        <div class="cq-feedback-head">Correct! (+${earned} pts)</div>
+        <p>${data.correctRationale}</p>
+        <button class="cq-btn cq-next-btn" onclick="nextQuestion()">Next Question</button>
+      </div>
+    `;
+  } else {
+    buttons[selectedIndex].classList.add('wrong');
+    buttons[data.correct].classList.add('correct');
+    streak = 0;
+    lives--;
+
+    feedbackArea.innerHTML = `
+      <div class="cq-feedback wrong">
+        <div class="cq-feedback-head">Incorrect (-1 Life)</div>
+        <p>${data.incorrectRationale}</p>
+        <button class="cq-btn cq-next-btn" onclick="nextQuestion()">Next Question</button>
+      </div>
+    `;
+  }
+}
+
+function handleTimeout() {
+  const data = GAME_DATA[currentQuestionIndex];
+  const buttons = document.querySelectorAll('.cq-opt');
+  const feedbackArea = document.getElementById('feedback-area');
+
+  buttons.forEach(btn => btn.disabled = true);
+  buttons[data.correct].classList.add('correct');
+  
+  streak = 0;
+  lives--;
+
+  feedbackArea.innerHTML = `
+    <div class="cq-feedback wrong">
+      <div class="cq-feedback-head">Time's Up! (-1 Life)</div>
+      <p>${data.incorrectRationale}</p>
+      <button class="cq-btn cq-next-btn" onclick="nextQuestion()">Next Question</button>
+    </div>
+  `;
+}
+
+function nextQuestion() {
+  if (lives <= 0) {
+    renderEndScreen(false);
+    return;
+  }
+
+  currentQuestionIndex++;
+
+  if (currentQuestionIndex >= GAME_DATA.length) {
+    renderEndScreen(true);
+  } else {
+    renderQuestion();
+  }
+}
+
+function renderEndScreen(won) {
+  clearInterval(timer);
+  
+  const endHtml = `
+    <div class="cq-center">
+      <h1 class="cq-title">${won ? 'QUEST COMPLETED!' : 'GAME OVER'}</h1>
+      <p class="cq-sub">${won ? 'You successfully mastered all 16 reading skill questions!' : 'You ran out of lives! Review your strategies and try again.'}</p>
+      <div class="cq-tier" style="margin-bottom: 20px;">Final Score: <b>${score}</b> pts</div>
+      <button class="cq-btn" onclick="startGame()">Play Again</button>
+    </div>
+  `;
+
+  gameContainer.innerHTML = endHtml;
+}
