@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comprehension Quest</title>
+  <title>Comprehension Quest - On-Level Edition</title>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -24,20 +24,27 @@
   <div class="cq-wrap">
     
     <!-- Start Screen -->
-    <span style="
-  background: #7B2CBF; 
-  color: #FFF; 
-  padding: 4px 12px; 
-  border-radius: 20px; 
-  font-weight: bold; 
-  font-size: 0.85rem;
-  letter-spacing: 0.5px;">
-  8th Grade Unit 1 • ON-LEVEL EDITION
-</span>
-    <div id="start-screen" class="cq-start">
+    <div id="start-screen" class="cq-start cq-center">
+      
+      <!-- Edition Badge (Nested correctly inside start container) -->
+      <div style="margin-bottom: 16px;">
+        <span style="
+          background: #7B2CBF; 
+          color: #FFF; 
+          padding: 6px 14px; 
+          border-radius: 20px; 
+          font-weight: bold; 
+          font-size: 0.85rem;
+          letter-spacing: 0.5px;
+          box-shadow: 0 0 10px rgba(123, 44, 191, 0.5);">
+          8th Grade Unit 1 • ON-LEVEL EDITION
+        </span>
+      </div>
+
       <h1 class="cq-title cq-pixel">COMPREHENSION<br>QUEST</h1>
       <p class="cq-sub">Unit 1 Reading Skills Review · On-Level</p>
 
+      <!-- Updated Level Cards matching the practice packet -->
       <div class="cq-levels-preview">
         <div class="cq-lvl-card">
           <b>LV.1 — Fix the Confusion</b>
@@ -48,25 +55,21 @@
           <p>Word meaning & context clues</p>
         </div>
         <div class="cq-lvl-card">
-          <b>LV.3 — Dictionary Dash</b>
-          <p>Choosing the right definition</p>
+          <b>LV.3 — Key Idea & Details</b>
+          <p>Main idea & supporting evidence</p>
         </div>
         <div class="cq-lvl-card">
-          <b>LV.4 — Evidence Hunt</b>
-          <p>Best textual evidence & inference</p>
-        </div>
-        <div class="cq-lvl-card">
-          <b>LV.5 — Sentence Sort</b>
+          <b>LV.4 — Sentence Sort</b>
           <p>Complete sentence or fragment?</p>
         </div>
       </div>
 
-      <button id="start-btn" class="cq-btn">
+      <button id="start-btn" class="cq-btn" style="margin-top: 20px;">
         <i data-lucide="play"></i> START GAME
       </button>
 
       <p class="cq-sub" style="margin-top: 24px; font-size: 12px;">
-        5 levels · read closely, answer fast, chain correct answers for bonus points.
+        4 levels · 16 questions · read closely, manage your time, and maintain your lives!
       </p>
     </div>
 
@@ -78,7 +81,7 @@
   <!-- JavaScript Link -->
   <script src="script.js"></script>
   <script>
-    // Initialize Lucide Icons
+    // Initialize Lucide Icons for static elements on page load
     lucide.createIcons();
   </script>
 </body>
