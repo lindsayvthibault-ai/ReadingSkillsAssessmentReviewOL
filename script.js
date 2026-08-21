@@ -1,448 +1,242 @@
-// --- Game Data Aligned to On-Level 8th Grade Unit 1 Reading Skills (15 Questions) ---
+// --- Game Data Aligned to On-Level Practice Packet (16 Questions) ---
 const GAME_DATA = [
-  // --- MONITORING COMPREHENSION (Q1 - Q4) ---
+  // --- LEVEL 1 — MONITORING COMPREHENSION (Q1 - Q3) ---
   {
     level: 1,
     title: "LV.1 — Fix the Confusion (Q1)",
-    passage: "Paragraphs 1–2:\nI was not a tall girl. At sixteen, I was barely five feet three inches. That did not work in my favor at the Baskin-Robbins in Park Forest, Illinois. In order to get the smooth, hard ice cream out of the tubs in the freezer, I had to open the glass display case and lean down inside.\n\nOnce my head was in, I used one arm to brace myself on the edge of the freezer while, with the other arm, I gathered enough strength to violently jam the metal scoop into the vat of ice cream. The violent jamming was important... When I had only one foot on the floor, barely balancing on my toes, that skim would send me flying forward...",
-    question: "After reading paragraphs 1-2, a student is confused about what the narrator is doing while scooping the ice cream. As they reread the passage they should—",
+    passage: "POEM: Learning to Bake\nMy aunt taught herself to bake the way she learned to hope —\nmix, stir, wait, breathe, wait, breathe—\nWhen you hover by the oven door she gives you a look that asks,\nWho told you good things happen fast?",
+    question: "A reader is confused by the final line of the poem: 'Who told you good things happen fast?' What should they do to understand why the aunt asks this question?",
     options: [
-      "make a prediction about what will happen next",
-      "picture the actions described",
-      "look up the word 'violent' in the dictionary",
-      "skip ahead to the next paragraph"
+      "Reread the lines about 'hovering by the oven door' to notice the speaker is impatient.",
+      "Look up the history of baking ovens to see how long they take to heat.",
+      "Predict what dessert the aunt will bake next.",
+      "Count how many times the poem repeats the word 'wait.'"
     ],
-    correct: 1,
-    correctRationale: "Great reading move! Visualizing (picturing) the physical actions—leaning in, bracing with one arm, balancing on toes—helps bring the confusing scene into focus.",
-    incorrectRationale: "Not quite. Making a prediction (A), looking up a single word (C), or skipping ahead (D) won't help clarify physical movement. Visualizing the actions helps you picture what is happening."
+    correct: 0,
+    correctRationale: "Great strategy! Rereading the context around hovering by the oven door shows that the speaker is being impatient while waiting for the food to bake.",
+    incorrectRationale: "Think about why someone hovering at the oven door gets questioned. Looking up oven history (B), predicting recipes (C), or counting words (D) doesn't explain the character's impatience."
   },
   {
     level: 2,
     title: "LV.1 — Fix the Confusion (Q2)",
-    passage: "Paragraph 6:\nBut there was this tiny denim miniskirt, with buttons up the front... It. Was. Fierce. Tiny denim mini was beautiful. Tiny denim mini was everything to me.",
-    question: "After paragraph 6, a reader is unsure why the author includes the details about the denim miniskirt. Which question would help the reader better understand?",
+    passage: "POEM: Learning to Bake\nMy aunt taught herself to bake the way she learned to hope —\nmix, stir, wait, breathe, wait, breathe—",
+    question: "A student thinks 'wait, breathe, wait, breathe' means the aunt is panicking. What strategy helps fix this misunderstanding?",
     options: [
-      "What does a denim miniskirt look like?",
-      "What is the price of the denim miniskirt?",
-      "Why does the skirt have buttons in the front?",
-      "Why is the skirt important to the narrator?"
+      "Look up 'breathe' in a medical dictionary.",
+      "Reread the stanza and notice how the repetition shows patience, not fear.",
+      "Ask a friend whether they enjoy baking.",
+      "Skip ahead to see if the aunt burns the cake."
     ],
-    correct: 3,
-    correctRationale: "Spot on! Asking why the skirt matters to the narrator helps connect her deep desire for it to her decision to get a summer job.",
-    incorrectRationale: "Think about author's purpose. Questions about appearance (A), price (B), or buttons (C) focus on minor details rather than understanding why the skirt motivates the entire story."
+    correct: 1,
+    correctRationale: "Spot on! Noticing how the rhythm and repetition mimic a calm, steady baking process shows patience rather than panic.",
+    incorrectRationale: "Look at the overall tone. A medical dictionary (A), personal opinions (C), or checking for burnt cakes (D) don't explain the calm rhythm of 'wait, breathe.'"
   },
   {
     level: 3,
     title: "LV.1 — Fix the Confusion (Q3)",
-    passage: "Paragraph 16:\nI never bought the denim mini. Turns out that minimum wage doesn't go all that far. I also never ate much ice cream after that. But I learned responsibility. I learned to keep my word. I learned, no matter how hard it is, to keep scooping until the job is done.",
-    question: "After finishing the text, a student understands what happened but is not sure what the narrator learned. What should the student do?",
+    passage: "POEM: Learning to Bake\nMy aunt taught herself to bake the way she learned to hope —\nmix, stir, wait, breathe, wait, breathe—\nWhen you hover by the oven door she gives you a look that asks,\nWho told you good things happen fast?",
+    question: "A reader doesn’t understand how baking connects to 'learning to hope.' What should they do?",
     options: [
-      "Skim the beginning of the text to recall who the narrator is",
-      "Reread the last paragraph and think about how the narrator changed",
-      "Look up unfamiliar words about jobs such as minimum wage",
-      "Highlight parts of the story when the mom tried to teach something"
-    ],
-    correct: 1,
-    correctRationale: "Excellent adjustment! The concluding paragraph directly reflects on the story's overall lesson and how the narrator grew from her experience.",
-    incorrectRationale: "Remember where takeaways live. The beginning of the story (A), vocabulary definitions (C), or mom's actions (D) won't summarize her personal lesson. The last paragraph explicitly states her growth."
-  },
-  {
-    level: 4,
-    title: "LV.1 — Fix the Confusion (Q4)",
-    passage: "Paragraph 11:\nI went home to face my mother, defiant. She laughed. Then she told me that, now that I'd committed to a job, I wasn't allowed to quit. 'You picked a hard row to hoe,' she said, and went back to her chess game.",
-    question: "While reading paragraph 11, a reader is confused about why the mother laughs instead of arguing. Which adjustment strategy would best help the reader understand the mother's reaction?",
-    options: [
-      "Annotating the mother's comment in paragraph 11 to show she knows the narrator has accidentally traded her freedom for a difficult summer job.",
-      "Re-reading paragraph 4 to visualize the different flavors of ice cream that the narrator had to wash out of her hair.",
-      "Asking a question about why the narrator chose a job at an ice cream shop instead of the hospital where she volunteered.",
-      "Using background knowledge about chess to recognize that the mother is treating the argument like a game."
+      "Reread the ending to see how waiting becomes a metaphor for hope.",
+      "Look up 'hope' in the dictionary.",
+      "Visualize a kitchen to picture where the aunt is standing.",
+      "Skim the poem quickly to find rhyming words."
     ],
     correct: 0,
-    correctRationale: "Bullseye! Annotating the mother's comment shows she recognizes the irony: her daughter got a grueling job thinking it meant 'freedom,' but now has to stick with it.",
-    incorrectRationale: "Consider what the mother realizes. Paragraph 4 details (B), hospital questions (C), or chess trivia (D) don't address why she laughs. Annotating her quote reveals she knows her daughter walked into a hard lesson."
+    correctRationale: "Bullseye! Rereading the connection between waiting for baked goods and waiting for good things in life clarifies how baking serves as a metaphor for hope.",
+    incorrectRationale: "Think about thematic connections. Dictionary definitions (B), visual details (C), or rhyming words (D) won't explain the deeper figurative connection between waiting and hope."
   },
 
-  // --- SENTENCE STRUCTURE (Q5) ---
+  // --- LEVEL 2 — VOCABULARY IN CONTEXT (Q4 - Q7) ---
+  {
+    level: 4,
+    title: "LV.2 — Word Detective (Q4)",
+    passage: "Paragraph 2:\nThe moment I dipped the brush into the paint bucket, thick white paint dripped down the handle and onto my wrist. I wiped it off, annoyed, and swiped the brush across the fence in one long streak. The paint splattered everywhere — on the grass, on my shoes, and on the neighbor’s mailbox. Mr. Alvarez sighed the kind of sigh that said, This is going to be a long summer.",
+    question: "In paragraph 2 of My Summer Painting Fences, what does 'splattered' most nearly mean?",
+    options: [
+      "gently landed",
+      "scattered messily",
+      "dried instantly",
+      "disappeared completely"
+    ],
+    correct: 1,
+    correctRationale: "Right on! The paint flew all over the grass, shoes, and mailbox, which shows it scattered messily.",
+    incorrectRationale: "Look at where the paint ended up—grass, shoes, mailbox! That shows a messy scatter (B) rather than landing gently, drying, or disappearing."
+  },
   {
     level: 5,
-    title: "LV.5 — Sentence Sort (Q5)",
-    passage: "Excerpts from the text:\n- 'Submerged in ice cream up to my elbows.'\n- 'One hand in the Cookies 'n Cream.'\n- 'Wanting to win.'\n- 'I did it for the denim mini.'",
-    question: "After reading the passage, a student annotates to identify complete sentences and fragments. Which of the following is a complete sentence?",
+    title: "LV.2 — Word Detective (Q5)",
+    passage: "Paragraph 2:\n...I wiped it off, annoyed, and swiped the brush across the fence in one long streak. The paint splattered everywhere — on the grass, on my shoes, and on the neighbor’s mailbox...",
+    question: "Which detail BEST helps the reader understand the meaning of 'splattered'?",
     options: [
-      "'Submerged in ice cream up to my elbows.'",
-      "'One hand in the Cookies 'n Cream.'",
-      "'Wanting to win.'",
-      "'I did it for the denim mini.'"
+      "'thick white paint dripped down the handle'",
+      "'I wiped it off, annoyed'",
+      "'The paint splattered everywhere — on the grass, on my shoes, and on the neighbor’s mailbox'",
+      "'Mr. Alvarez sighed'"
     ],
-    correct: 3,
-    correctRationale: "You got it! 'I did it for the denim mini' has both a subject ('I') and a verb ('did') that form a complete thought.",
-    incorrectRationale: "Check for subjects and main verbs. Options A, B, and C are all descriptive fragments lacking full subject-verb structures. Option D is a complete sentence."
+    correct: 2,
+    correctRationale: "Perfect evidence! Listing all the places the paint landed (grass, shoes, mailbox) shows the messy scattering in action.",
+    incorrectRationale: "Find the sentence that illustrates the word. Options A, B, and D describe paint on a wrist or reactions, whereas Option C directly shows the widespread mess."
   },
-
-  // --- VOCABULARY & CONTEXT CLUES (Q6 - Q10) ---
   {
     level: 6,
     title: "LV.2 — Word Detective (Q6)",
-    passage: "Paragraphs 8 & 10:\nWanting to live, I returned the denim mini. And then, wanting to win, I walked over to Baskin-Robbins and, with all my honor-student charm, talked the manager into giving me a job...\n\nParagraph 10: I let a miniskirt propel me into the workforce.",
-    question: "In paragraph 10, the word propel is used. What does propel most nearly mean as it is used in the text?",
+    passage: "Paragraph 3:\nBy the end of the first week, I had learned to paint without splattering. But it was still exhausting. The sun beat down on my back, and my arms ached from holding the brush steady. Every afternoon, I came home streaked with paint and smelling like sunscreen and sweat.",
+    question: "In paragraph 3, what does 'ached' most nearly mean?",
     options: [
-      "To carefully consider a decision",
-      "To avoid responsibility",
-      "To push or drive forward",
-      "To change direction"
+      "felt sore from effort",
+      "grew stronger over time",
+      "moved quickly",
+      "became numb"
     ],
-    correct: 2,
-    correctRationale: "Right on! The desire for the miniskirt pushed or drove the narrator directly into taking action and getting a job.",
-    incorrectRationale: "Look at what happened. The skirt caused her to immediately walk over and get hired. It pushed/drove her forward (C), rather than causing her to hesitate or avoid action."
+    correct: 0,
+    correctRationale: "You got it! Holding a brush steady in the hot sun all day causes muscles to feel sore from effort.",
+    incorrectRationale: "Think about physical fatigue. Exhausting work in the heat makes your arms sore (A), not fast, numb, or immediately stronger."
   },
   {
     level: 7,
     title: "LV.2 — Word Detective (Q7)",
-    passage: "Context from Paragraphs 8–10:\nParagraph 8: '...I walked over to Baskin-Robbins and, with all my honor-student charm, talked the manager into giving me a job.'\nParagraph 10: 'I let a miniskirt propel me into the workforce.'",
-    question: "Which detail BEST helps the reader understand the meaning of propel?",
+    passage: "Paragraph 4:\nI didn’t need the job. My parents kept telling me to focus on summer reading instead. But there was this backpack — a forestgreen hiking pack with padded straps and a dozen pockets. I wanted it more than anything...",
+    question: "In paragraph 4, what does 'forestgreen' most nearly describe?",
     options: [
-      "'I walked over to Baskin-Robbins and talked the manager into giving me a job.'",
-      "'I returned the denim mini'",
-      "'I came home covered in Butter Pecan and announced to my mother that she could not make me keep working.'",
-      "'I was dumb enough to think I knew more than my mother'"
-    ],
-    correct: 0,
-    correctRationale: "Perfect evidence! Taking immediate action to get hired illustrates the driving force (propel) created by wanting the skirt.",
-    incorrectRationale: "Option A shows the direct action caused by the push. Options B, C, and D describe returning items, complaining, or reflecting on her mother."
-  },
-  {
-    level: 8,
-    title: "LV.2 — Word Detective (Q8)",
-    passage: "Paragraph 7 & 11:\nParagraph 7: 'When she insisted that it be returned, I—newly immersed into the worlds of Janet Jackson and Madonna—refused.'\nParagraph 8: '...wanting to win...'\nParagraph 11: 'I went home to face my mother, defiant.'\nParagraph 13: '...announced to my mother that she could not make me keep working.'",
-    question: "In paragraph 11, the narrator describes her attitude as defiant. Which group of phrases from the surrounding text serves as the best context clues to help the reader understand the meaning of defiant?",
-    options: [
-      "'honor-student charm,' 'Employee of the Month,' and 'smiled at strangers'",
-      "'refused,' 'wanting to win,' and 'could not make me'",
-      "'violent jamming,' 'hard row to hoe,' and 'keep scooping'",
-      "'returned the denim mini,' 'forty dollars,' and 'minimum wage'"
+      "the size of the backpack",
+      "the color of the backpack",
+      "the weight of the backpack",
+      "the price of the backpack"
     ],
     correct: 1,
-    correctRationale: "Awesome job! Words like 'refused,' 'wanting to win,' and 'could not make me' show an attitude of resistance and rebellion (defiant).",
-    incorrectRationale: "Look for bold, resistant behavior. Option A shows positive workplace behavior, Option C shows physical labor, and Option D lists money facts. Option B directly shows resistance."
+    correctRationale: "Awesome! 'Forestgreen' combines 'forest' and 'green' to describe the exact shade/color of the backpack.",
+    incorrectRationale: "Break down the word! 'Green' is a color (B), not a size, weight, or dollar price."
+  },
+
+  // --- LEVEL 3 — KEY IDEA & SUPPORTING DETAILS (Q8 - Q12) ---
+  {
+    level: 8,
+    title: "LV.3 — Key Idea & Details (Q8)",
+    passage: "Passage Summary:\nAn impatient teenager takes a hard summer job painting fences to buy a backpack. Along the way, the narrator learns how to slow down, pay attention, and finish what they started.",
+    question: "Which sentence BEST states the main idea of My Summer Painting Fences?",
+    options: [
+      "Painting fences is harder than it looks.",
+      "A summer job can teach patience and responsibility.",
+      "Teenagers should earn their own money.",
+      "Backpacks are expensive and difficult to buy."
+    ],
+    correct: 1,
+    correctRationale: "Bingo! The entire story focuses on how the hard work of painting fences taught the narrator patience and how to stick with a job.",
+    incorrectRationale: "Look for the central lesson. Options A, C, and D mention specific details or opinions, but Option B captures the main growth of the narrator."
   },
   {
     level: 9,
-    title: "LV.3 — Dictionary Dash (Q9)",
-    passage: "Paragraph 15:\nIt was my first job. I felt gritty; I felt real. There were time sheets and shifts and a manager and a uniform. I got Employee of the Month.\n\nDictionary Entry:\ngritty (adjective)\n1. containing small rough particles\n2. showing courage and determination\n3. unpleasantly dirty or messy\n4. having a rough texture",
-    question: "As it is used in paragraph 15, which definition BEST matches the meaning of gritty?",
+    title: "LV.3 — Key Idea & Details (Q9)",
+    passage: "Paragraph 3:\nBy the end of the first week, I had learned to paint without splattering. But it was still exhausting. The sun beat down on my back, and my arms ached from holding the brush steady...",
+    question: "Which detail BEST supports the idea that the narrator’s job was challenging?",
     options: [
-      "definition 1",
-      "definition 2",
-      "definition 3",
-      "definition 4"
+      "Paint dripped onto the narrator’s wrist.",
+      "The narrator wanted a forestgreen backpack.",
+      "The sun beat down and her arms ached from painting.",
+      "Her friends biked past the yard."
     ],
-    correct: 1,
-    correctRationale: "Spot on! Feeling 'gritty' alongside feeling 'real' and earning Employee of the Month means showing determination, toughness, and work ethic.",
-    incorrectRationale: "Look at the context of pride and hard work. Definitions 1, 3, and 4 describe rough dirt or unpleasant textures. In this context, it means showing determination and courage (Definition 2)."
+    correct: 2,
+    correctRationale: "Great choice! The beating sun and aching arms directly show the physical difficulty and challenge of the work.",
+    incorrectRationale: "Focus on evidence of physical struggle. Minor accidents (A), wanting items (B), or watching friends (D) don't describe the hardship of the job like Option C does."
   },
   {
     level: 10,
-    title: "LV.2 — Word Detective (Q10)",
-    passage: "Paragraph 4:\nThat's the curse of the job—ice cream everywhere. My uniform's pink-brown-and-white striped shirt was crisp, cheerful, but by the end of each shift it was gummy and streaked with chocolate and pistachio and sorbet and mint chip.",
-    question: "In paragraph 4, the author describes her uniform as 'gummy and streaked with chocolate...' What does the word gummy most nearly mean as it is used in the paragraph?",
+    title: "LV.3 — Key Idea & Details (Q10)",
+    passage: "Paragraph 5:\nSo I kept painting. Slowly. Carefully... By August, I had saved enough for the backpack. But somewhere along the way, I realized the backpack wasn’t really the point. I had learned how to slow down, pay attention, and finish what I started.",
+    question: "What is the main idea of paragraph 5?",
     options: [
-      "sticky and messy",
-      "bright and colorful",
-      "soft and comfortable",
-      "clean and smooth"
+      "The narrator regrets taking the job.",
+      "The narrator realizes she learned more than she expected.",
+      "The narrator decides to quit painting fences.",
+      "The narrator buys the backpack immediately."
     ],
-    correct: 0,
-    correctRationale: "Great work! Melted ice cream drying on a shirt creates a sticky, messy residue.",
-    incorrectRationale: "Think about melted ice cream on fabric. Dried, streaked ice cream makes clothing sticky and messy (A), not soft, bright, or clean."
+    correct: 1,
+    correctRationale: "Spot on! The narrator realizes that beyond just getting a backpack, the true value was learning life lessons in patience and focus.",
+    incorrectRationale: "Read the concluding reflection. She doesn't regret the job or quit; she discovers that learning to slow down and finish tasks was the unexpected reward."
   },
-
-  // --- KEY IDEA & DETAILS (Q11 - Q15) ---
   {
     level: 11,
-    title: "LV.4 — Evidence Hunt (Q11)",
-    passage: "Passage Overview:\nThe narrator gets a hard job scooping ice cream to buy a miniskirt. Even though she never gets the skirt, she stays all summer, learns work ethic, and keeps her word.",
-    question: "Which sentence BEST states the main idea of the passage?",
+    title: "LV.3 — Key Idea & Details (Q11)",
+    passage: "Paragraphs 3 & 5:\n- 'The sun beat down on my back, and my arms ached...'\n- 'Even when the heat made my head spin. Even when my friends biked past...'",
+    question: "Which detail BEST supports the idea that independence often comes with unexpected challenges?",
     options: [
-      "Working at an ice cream shop is more difficult than it seems",
-      "Teenagers should earn their own money for clothing",
-      "A summer job teaches responsibility and commitment",
-      "Parents should allow teenagers more independence"
+      "The narrator asks her mom for money.",
+      "The narrator’s friends want her to hang out.",
+      "The narrator learns to paint slowly and carefully in the heat.",
+      "The narrator chooses a backpack with padded straps."
     ],
     correct: 2,
-    correctRationale: "Bingo! The entire passage focuses on how a challenging summer job ultimately taught the narrator responsibility, persistence, and commitment.",
-    incorrectRationale: "Identify the overarching takeaway. Options A, B, and D focus on minor opinions or specific plot details. Option C captures the central theme of the entire memoir."
+    correctRationale: "Bullseye! Pushing through extreme heat and working slowly to earn her own way illustrates the hard realities of independence.",
+    incorrectRationale: "Look for unexpected hardship during the process of earning independence. Option C details the grueling effort required to succeed on her own."
   },
   {
     level: 12,
-    title: "LV.4 — Evidence Hunt (Q12)",
-    passage: "Paragraphs 1–4:\n- 'I used one arm to brace myself... gathered enough strength to violently jam the metal scoop...'\n- 'When I had only one foot on the floor... send me flying forward...'\n- 'Submerged in ice cream up to my elbows.'\n- '...by the end of each shift it was gummy and streaked...'",
-    question: "Which detail from paragraphs 1-4 BEST supports the idea that the narrator's job was challenging?",
+    title: "LV.3 — Key Idea & Details (Q12)",
+    passage: "Paragraph 1 vs. Paragraph 5:\n- Paragraph 1: 'I was not a patient person. At fourteen, I wanted everything done fast...'\n- Paragraph 5: 'So I kept painting... saved enough... finished what I started.'",
+    question: "Which detail LEAST supports the idea that the narrator is responsible?",
     options: [
-      "She had to lean into the freezer to reach the ice cream",
-      "She fell into tubs of ice cream while scooping",
-      "Her uniform was colorful and cheerful",
-      "She worked at a popular ice cream shop"
+      "She wanted everything done fast.",
+      "She kept painting even when it was exhausting.",
+      "She saved money all summer.",
+      "She finished the job even when her friends invited her to leave."
     ],
-    correct: 1,
-    correctRationale: "You got it! Physically losing balance and landing elbow-deep in cold tubs of ice cream strongly demonstrates how challenging the work was.",
-    incorrectRationale: "Look for direct evidence of hardship. Leaning in (A) is routine, while uniform colors (C) and store popularity (D) aren't challenges. Falling into vats (B) directly shows physical struggle."
+    correct: 0,
+    correctRationale: "Correct! Wanting everything done fast shows her initial impatience, *not* responsible behavior.",
+    incorrectRationale: "Pay close attention to 'LEAST'! Options B, C, and D show dedication, saving, and commitment (responsible traits). Option A shows her initial flaw."
   },
+
+  // --- LEVEL 4 — SENTENCE SORT (Q13 - Q16) ---
   {
     level: 13,
-    title: "LV.4 — Evidence Hunt (Q13)",
-    passage: "Paragraph 9:\nI would like to say that I didn't do it for the denim mini. I would like to say that I did it for the freedom... I would like to say that I did it for the power... The thing is, though, when you boil it down: I did it for the denim mini.",
-    question: "What is the main idea of paragraph 9?",
+    title: "LV.4 — Sentence Sort (Q13)",
+    passage: "Item 13:\n'Balancing on my toes in the heat.'",
+    question: "Determine whether the excerpt is a complete sentence or a fragment:\n\n'Balancing on my toes in the heat.'",
     options: [
-      "The narrator explains her decision in a more impressive way than the truth",
-      "The narrator is unsure why she decided to get a job in the first place",
-      "The narrator believes her job will give her independence and power",
-      "The narrator realizes she took the job because she wanted the denim miniskirt"
+      "Fragment",
+      "Complete Sentence"
     ],
-    correct: 3,
-    correctRationale: "Spot on! Despite all the noble motives she could invent ('freedom', 'power'), the honest truth was simply that she wanted the skirt.",
-    incorrectRationale: "Read the final sentence of paragraph 9. She explicitly admits that when you 'boil it down,' her primary motive was simply wanting the denim mini (D)."
+    correct: 0,
+    correctRationale: "You got it! This is a fragment because it lacks a main subject and a finite verb expresssing a complete thought.",
+    incorrectRationale: "Who is balancing? This participle phrase is missing a clear subject and predicate, making it a fragment (A)."
   },
   {
     level: 14,
-    title: "LV.4 — Evidence Hunt (Q14)",
-    passage: "Key Themes & Events:\nThe narrator seeks independence from her mother by getting a job, but quickly discovers the intense physical pain, messy shifts, and hard labor involved in earning her own way.",
-    question: "Which detail from the story BEST supports the key idea that independence often comes with unexpected challenges?",
+    title: "LV.4 — Sentence Sort (Q14)",
+    passage: "Item 14:\n'I wiped the paint off my wrist.'",
+    question: "Determine whether the excerpt is a complete sentence or a fragment:\n\n'I wiped the paint off my wrist.'",
     options: [
-      "The narrator uses her 'honor-student charm' to convince the manager to hire her on the spot.",
-      "The narrator realizes that her mother will no longer dictate what she wears once she has her own income.",
-      "The narrator discovers that scooping ice cream involves 'violent jamming' and falling into vats of Cookies 'n Cream.",
-      "The narrator feels getting a job is 'real' because she learns about time sheets and a professional uniform."
+      "Fragment",
+      "Complete Sentence"
     ],
-    correct: 2,
-    correctRationale: "Perfect selection! Expecting financial independence turned out to mean physical struggle, 'violent jamming,' and falling into vats of ice cream.",
-    incorrectRationale: "Look for an unexpected challenge. Getting hired (A), knowing rules (B), and learning time sheets (D) are standard. Experiencing violent jamming and falling into vats (C) highlights unexpected difficulty."
+    correct: 1,
+    correctRationale: "Spot on! 'I' is the subject, 'wiped' is the verb, and it expresses a complete thought.",
+    incorrectRationale: "Check subject and verb: 'I' (subject) + 'wiped' (verb). This forms a complete sentence (B)."
   },
   {
     level: 15,
-    title: "LV.4 — Evidence Hunt (Q15)",
-    passage: "Narrator's Actions vs. Mother's Traits:\n- Narrator took initiative, got hired, tracked time sheets, worked all summer, and kept her word.\n- Mother insisted on rules, laughed at the defiance, and set strict expectations.",
-    question: "Which detail LEAST supports the idea that the narrator is responsible?",
+    title: "LV.4 — Sentence Sort (Q15)",
+    passage: "Item 15:\n'One long streak across the fence.'",
+    question: "Determine whether the excerpt is a complete sentence or a fragment:\n\n'One long streak across the fence.'",
     options: [
-      "The narrator's mother was very strict; she would not buy just anything her daughter wanted.",
-      "Working at the ice cream shop forced the narrator to learn professional expectations like time sheets and uniform.",
-      "The narrator took initiative to hunt for a job and convince the manager to hire her on the spot.",
-      "Though each work day ended with ice cream everywhere, the narrator continues working at the shop throughout the summer."
+      "Fragment",
+      "Complete Sentence"
     ],
     correct: 0,
-    correctRationale: "Correct! The mother's strict parenting style describes the *mother*, not the *narrator's* personal responsibility.",
-    incorrectRationale: "Be careful with 'LEAST'! Options B, C, and D all describe actions taken by the narrator showing responsibility. Option A describes the mother's strictness, not the narrator."
+    correctRationale: "Great eye! This is a fragment because there is no action verb showing what the streak is doing.",
+    incorrectRationale: "Notice there is no action verb here. It's just a noun phrase, making it a fragment (A)."
+  },
+  {
+    level: 16,
+    title: "LV.4 — Sentence Sort (Q16)",
+    passage: "Item 16:\n'I learned to slow down.'",
+    question: "Determine whether the excerpt is a complete sentence or a fragment:\n\n'I learned to slow down.'",
+    options: [
+      "Fragment",
+      "Complete Sentence"
+    ],
+    correct: 1,
+    correctRationale: "Perfect! 'I' is the subject, 'learned' is the action verb, creating a full thought.",
+    incorrectRationale: "This has a subject ('I') and a main verb ('learned'). It stands on its own as a complete sentence (B)."
   }
 ];
-
-let currentLevelIndex = 0;
-let score = 0;
-let lives = 7; // Updated to 7 lives
-let timer = null;
-let timeLeft = 120; // Updated to 2 minutes (120 seconds)
-
-// --- DOM Initialization ---
-document.addEventListener('DOMContentLoaded', () => {
-  const startBtn = document.getElementById('start-btn');
-  if (startBtn) {
-    startBtn.addEventListener('click', startGame);
-  }
-});
-
-function startGame() {
-  const startScreen = document.getElementById('start-screen');
-  if (startScreen) {
-    startScreen.style.display = 'none';
-  }
-  
-  currentLevelIndex = 0;
-  score = 0;
-  lives = 7; // Reset to 7 lives at start
-  loadQuestion();
-}
-
-function loadQuestion() {
-  const container = document.getElementById('game-container');
-  if (!container) return;
-
-  if (currentLevelIndex >= GAME_DATA.length) {
-    showEndScreen(true);
-    return;
-  }
-
-  const data = GAME_DATA[currentLevelIndex];
-  timeLeft = 120; // Reset timer to 120s for each question
-
-  container.innerHTML = `
-    <!-- HUD -->
-    <div class="cq-hud">
-      <div class="cq-hud-item">
-        <i data-lucide="heart" style="color:#FF6FA0;"></i> Lives: ${'❤️'.repeat(lives)}
-      </div>
-      <div class="cq-hud-item">
-        <i data-lucide="trophy" style="color:#FFC857;"></i> Score: ${score}
-      </div>
-      <div class="cq-hud-item">
-        <i data-lucide="clock" style="color:#5CE7DE;"></i> Time: <span id="timer-display">120s</span>
-      </div>
-    </div>
-
-    <!-- Level Header -->
-    <div class="cq-level-head">
-      <h2>${data.title}</h2>
-      <span>Question ${currentLevelIndex + 1} of ${GAME_DATA.length}</span>
-    </div>
-
-    <!-- Passage Box -->
-    <div class="cq-passage">
-      <h3>Reading Passage / Text Snippet</h3>
-      <p style="white-space: pre-line;">${data.passage}</p>
-    </div>
-
-    <!-- Question Card -->
-    <div class="cq-card">
-      <p class="cq-question">${data.question}</p>
-      <div class="cq-options">
-        ${data.options.map((opt, idx) => `
-          <button class="cq-opt" onclick="selectOption(${idx})">
-            <span class="cq-opt-letter">${String.fromCharCode(65 + idx)}.</span>
-            <span>${opt}</span>
-          </button>
-        `).join('')}
-      </div>
-      <div id="feedback-area"></div>
-    </div>
-  `;
-
-  if (window.lucide) {
-    lucide.createIcons();
-  }
-
-  startTimer();
-}
-
-function startTimer() {
-  clearInterval(timer);
-  timer = setInterval(() => {
-    timeLeft--;
-    const timerDisplay = document.getElementById('timer-display');
-    if (timerDisplay) {
-      timerDisplay.innerText = `${timeLeft}s`;
-    }
-
-    if (timeLeft <= 0) {
-      clearInterval(timer);
-      handleTimeout();
-    }
-  }, 1000);
-}
-
-function selectOption(selectedIndex) {
-  clearInterval(timer);
-  const data = GAME_DATA[currentLevelIndex];
-  const buttons = document.querySelectorAll('.cq-opt');
-  const feedbackArea = document.getElementById('feedback-area');
-
-  buttons.forEach(btn => btn.disabled = true);
-
-  if (selectedIndex === data.correct) {
-    score += 100 + timeLeft * 2;
-    buttons[selectedIndex].classList.add('correct');
-    feedbackArea.innerHTML = `
-      <div class="cq-feedback correct">
-        <div class="cq-feedback-head">✓ Correct Strategy!</div>
-        <p><b>Why it works:</b> ${data.correctRationale}</p>
-        <button class="cq-btn cq-next-btn" onclick="nextQuestion()">Next Question →</button>
-      </div>
-    `;
-  } else {
-    lives--;
-    buttons[selectedIndex].classList.add('wrong');
-    buttons[data.correct].classList.add('correct');
-
-    const nextAction = lives <= 0 ? "showEndScreen(false)" : "nextQuestion()";
-    const buttonText = lives <= 0 ? "View Results" : "Continue →";
-
-    feedbackArea.innerHTML = `
-      <div class="cq-feedback wrong">
-        <div class="cq-feedback-head">✗ Strategy Check</div>
-        <p><b>Rationale:</b> ${data.incorrectRationale}</p>
-        <button class="cq-btn cq-next-btn" onclick="${nextAction}">${buttonText}</button>
-      </div>
-    `;
-  }
-
-  if (window.lucide) {
-    lucide.createIcons();
-  }
-}
-
-function handleTimeout() {
-  lives--;
-  const data = GAME_DATA[currentLevelIndex];
-  const buttons = document.querySelectorAll('.cq-opt');
-  const feedbackArea = document.getElementById('feedback-area');
-
-  buttons.forEach(btn => btn.disabled = true);
-  buttons[data.correct].classList.add('correct');
-
-  const nextAction = lives <= 0 ? "showEndScreen(false)" : "nextQuestion()";
-  const buttonText = lives <= 0 ? "View Results" : "Continue →";
-
-  feedbackArea.innerHTML = `
-    <div class="cq-feedback wrong">
-      <div class="cq-feedback-head">⏰ Time's Up!</div>
-      <p><b>Rationale:</b> ${data.incorrectRationale}</p>
-      <button class="cq-btn cq-next-btn" onclick="${nextAction}">${buttonText}</button>
-    </div>
-  `;
-
-  if (window.lucide) {
-    lucide.createIcons();
-  }
-}
-
-function nextQuestion() {
-  currentLevelIndex++;
-  loadQuestion();
-}
-
-function showEndScreen(won) {
-  clearInterval(timer);
-  const container = document.getElementById('game-container');
-  if (!container) return;
-
-  const title = won ? "QUEST COMPLETE!" : "GAME OVER";
-  const sub = won 
-    ? "You successfully mastered all 15 reading skill questions for Unit 1!" 
-    : "You ran out of lives! Review your strategies and give it another try.";
-
-  container.innerHTML = `
-    <div class="cq-center">
-      <h1 class="cq-title cq-pixel">${title}</h1>
-      <p class="cq-sub">${sub}</p>
-      
-      <div class="cq-tier" style="margin-bottom: 20px;">
-        Final Score: <b>${score} Points</b>
-      </div>
-
-      <!-- Post-Game Skill Reflection Module -->
-      <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 20px; text-align: left; max-width: 600px; margin: 0 auto 25px auto;">
-        <h3 style="color: #5CE7DE; margin-top: 0; margin-bottom: 12px; font-size: 1.1rem;">
-          🧠 Reading Skill Reflection Checklist
-        </h3>
-        <p style="font-size: 0.9rem; color: #ccc; margin-bottom: 15px;">Key moves for assessment success:</p>
-        <ul style="font-size: 0.9rem; line-height: 1.6; color: #eee; padding-left: 20px; margin-bottom: 0;">
-          <li><b>Monitor & Adjust:</b> Picture action scenes and reread concluding paragraphs to catch overarching lessons.</li>
-          <li><b>Context Clues:</b> Look for behavioral descriptions (e.g., 'refused', 'wanting to win') to unlock word meanings.</li>
-          <li><b>Dictionary Entry:</b> Match word senses to character traits (e.g., determination vs. rough texture).</li>
-          <li><b>Key Idea & Evidence:</b> Distinguish between main thematic takeaways and minor supporting facts.</li>
-          <li><b>Sentence Structure:</b> Look for complete thoughts containing both a subject and an active verb.</li>
-        </ul>
-      </div>
-
-      <button class="cq-btn" onclick="location.reload()">
-        Play Again 🔄
-      </button>
-    </div>
-  `;
-}
